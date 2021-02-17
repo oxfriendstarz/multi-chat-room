@@ -1,0 +1,6 @@
+<div class="chat-rooms-wrapper">
+  <div class="row">
+    <div class="col-3 border"><app-rooms (changeRoom)="changingRoom($event)"></app-rooms></div>
+    <div class="col border"><app-chat-box [room]="selectedRoom"></app-chat-box></div>
+  </div>
+</div>

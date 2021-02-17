@@ -1,0 +1,8 @@
+<mat-card [class.own-messages]="isOwnMessage(chatMessage?.user)">
+  <mat-card-header>
+    <mat-card-title>{{ chatMessage?.user.split('__')[1] }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ chatMessage?.message }}</p>
+  </mat-card-content>
+</mat-card>

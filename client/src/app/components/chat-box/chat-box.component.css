@@ -1,0 +1,5 @@
+.chatHistory {
+  height: 525px;
+  overflow-y: scroll;
+  margin: 10px 0px;
+}

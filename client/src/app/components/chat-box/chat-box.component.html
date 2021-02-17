@@ -1,0 +1,8 @@
+<div class="chatHistory" #chatHistory>
+  <app-chat-message *ngFor="let message of chatMessages.get(room)" [chatMessage]="message"></app-chat-message>
+</div>
+<div class="chatBox">
+  <form  [formGroup]="chatForm" (submit)="sendMessage($event)">
+    <input type="text" class="form-control background-transparent" formControlName="message">
+  </form>
+</div>

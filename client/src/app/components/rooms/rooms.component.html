@@ -1,0 +1,7 @@
+
+<mat-selection-list [multiple]="false" >
+  <ng-container *ngFor="let room of rooms">
+    <mat-list-option [selected]="room === currentRoom" (click)="changingRoom(room)" [value]="room">{{ room }}</mat-list-option>
+    <mat-divider></mat-divider>
+  </ng-container>
+</mat-selection-list>

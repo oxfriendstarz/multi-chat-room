@@ -1,0 +1,12 @@
+
+<div class='sigin-wrapper'>
+  <h1>Join to <br/> Chat Room</h1>
+  <form [formGroup]="joinForm" (submit)="joinToChatRoom()">
+    <mat-form-field class="full-width form-field">
+      <mat-label>Enter your name *</mat-label>
+      <input matInput formControlName="user" type="text" class="input-field" placeholder="Ex. joe">
+      <mat-error *ngIf="joinForm.get('user').dirty && joinForm.get('user').errors?.required">User cannot be empty.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button type="submit" class="full-width mt-3" color="primary">JOIN</button>
+  </form>
+</div>
